@@ -2,6 +2,24 @@
   #FONTS
 \*------------------------------------*/
 
+@font-face {
+    font-family: "ClearSans-Light";
+    src: url('./fonts/ClearSans-Light-webfont.woff') format("woff");
+    font-weight: 200;
+  }
+
+  @font-face {
+    font-family: "ClearSans-Medium";
+    src: url('./fonts/ClearSans-Light-webfont.woff') format("woff");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "ClearSans-Regular";
+    src: url('./fonts/ClearSans-Light-webfont.woff') format("woff");
+    font-weight: 600;
+  }
+
 /*------------------------------------*\
   #GENERIC
 \*------------------------------------*/
@@ -9,16 +27,21 @@
 /*
     Generic: Page
     ---
-    Global page styles + universal box-sizing:
+    Global page style   s + universal box-sizing:
 */
 
 html {
-    font-size: 16px;
-    line-height: 24px;
-    font-family: Helvetica, arial, sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    font-family:"ClearSans-Regular", Helvetica, arial, sans-serif;
+    font-weight:200;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background: rgb(10,37,125);
+    background: linear-gradient(135deg, rgba(10,37,125,1) 0%, rgba(6,22,73,1) 100%);
+    background-attachment: fixed;
+    color:white;
 }
 
 *,
@@ -205,7 +228,8 @@ a:focus {
 .o-container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 56.4em; /* 56.4 * 20px = 1128px */
+    max-width: 1278px; /* 56.4 * 20px = 1128px */
+    max-width: 79.875em;
 }
 
 /*
@@ -364,6 +388,60 @@ a:focus {
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
+
+.c-header {
+    
+}
+
+.c-logo{
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+.c-logo__symbol {
+    height: 100%;
+}
+
+.c-nav {
+    font-size:13px;
+    font-weight:600;
+    line-height:26px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.c-nav__link {
+    text-decoration:none;
+    font-weight:400;
+    padding:5px 0;
+    color:white;
+}
+
+.c-nav__link:hover,
+.c-nav__link:focus {
+    text-shadow:#8EC7FF 0px 0 8px;
+}
+
+@media (min-width: 992px) {
+    .c-header{
+        display:flex;
+    }
+    .c-header__logo{
+        justify-content: flex-start;
+    }
+    .c-header__nav{
+        justify-content: flex-end;
+    }
+    .c-nav__link {
+        display:inline-block;
+        text-decoration: none;
+        padding:2.5px 5px;
+
+    }
+
+}
+
 
 /*------------------------------------*\
   #UTILITIES

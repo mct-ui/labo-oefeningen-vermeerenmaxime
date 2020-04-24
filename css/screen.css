@@ -432,7 +432,6 @@ a:focus {
     }
     .c-header__nav{
         justify-content: right;
-
     }
 
     .c-nav__link {
@@ -472,7 +471,25 @@ a:focus {
     box-sizing:border-box;
     height:56px;
 }
+figure {
+    position: relative;
+    float: left;
+  }
 
+figcaption {
+    background-color: white;
+    color: black;
+    max-width: 250px;
+    text-align:right;
+    font-size: 10px;
+    display: block;
+    position: absolute;
+    font-size:12px;
+    top: 0;
+    right:8px;
+    padding:10px;
+    border-right:4px solid #0053FB;
+}
 
 
 

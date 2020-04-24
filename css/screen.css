@@ -430,7 +430,7 @@ a:focus {
     .c-header__logo{
         justify-content: flex-start;
     }
-    .c-header__nav, .c-nav__list{
+    .c-header__nav{
         justify-content: right;
 
     }
@@ -441,8 +441,39 @@ a:focus {
         padding:2.5px 5px;
 
     }
+    .c-nav__link .c-link-cta{
+        margin-top:-16px;
+    }
 
 }
+
+
+/*
+    Component: CTA link
+    ---
+    Small cta link with custom animation
+*/
+
+.c-link-cta {
+ 
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    padding: 16px 30px;
+    background-image: linear-gradient(to right, #033AA7 0%, #0053FB 100%);
+    color:#DBEDFF !important;
+    font-weight:600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border:1px solid rgb(61, 133, 205);
+    box-shadow:0 0 10px rgba(17,149,255,0.3);
+    box-sizing:border-box;
+    height:56px;
+}
+
+
 
 
 /*------------------------------------*\

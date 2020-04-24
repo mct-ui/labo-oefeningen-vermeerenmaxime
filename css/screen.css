@@ -430,9 +430,11 @@ a:focus {
     .c-header__logo{
         justify-content: flex-start;
     }
-    .c-header__nav{
-        justify-content: flex-end;
+    .c-header__nav, .c-nav__list{
+        justify-content: right;
+
     }
+
     .c-nav__link {
         display:inline-block;
         text-decoration: none;

@@ -425,7 +425,11 @@ a:focus {
 
 @media (min-width: 992px) {
     .c-header{
-        display:flex;
+        
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
     }
     .c-header__logo{
         justify-content: flex-start;
@@ -485,9 +489,11 @@ figcaption {
     display: block;
     position: absolute;
     font-size:12px;
-    top: 0;
+    top: 4px;
     right:8px;
-    padding:10px;
+    line-height:16px;
+    color:#474D59;
+    padding:12px;
     border-right:4px solid #0053FB;
 }
 
